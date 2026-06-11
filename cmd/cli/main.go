@@ -32,7 +32,7 @@ func main() {
 	}
 
 	// rootCmd is the base command
-	// It gets populated with subcommands
+	// it gets populated with subcommands
 	rootCmd := &cobra.Command{
 		SilenceUsage: true,
 		Long: instanceName + " runs an engine that is optimized for your host machine,\n" +
