@@ -1,0 +1,1 @@
+paths: [cmd/cli/**]
