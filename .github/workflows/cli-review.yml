@@ -14,7 +14,7 @@ permissions:
 
 jobs:
   cli-review:
-    uses: canonical/cli-skill/.github/workflows/cli-skill-review-reusable.yml@main
+    uses: canonical/cli-skill/.github/workflows/cli-skill-review-reusable.yml@v0
     with:
       command: /cli-review
       pr_number: ${{ github.event.pull_request.number || 0 }}
