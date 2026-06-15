@@ -17,8 +17,6 @@ jobs:
     uses: canonical/cli-skill/.github/workflows/cli-skill-review-reusable.yml@v0
     with:
       command: /cli-review
-      pr_number: ${{ github.event.pull_request.number || 0 }}
-      post_pr_comment: ${{ github.event_name == 'pull_request' }}
       fail_on_agent_error: true
       enforce_cli_metadata: false
     secrets:
