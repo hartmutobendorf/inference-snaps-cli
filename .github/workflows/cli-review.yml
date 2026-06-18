@@ -14,7 +14,7 @@ permissions:
 
 jobs:
   cli-review:
-    uses: canonical/cli-skill/.github/workflows/cli-skill-review-reusable.yml@v0
+    uses: canonical/cli-skill/.github/workflows/cli-skill-review-reusable.yml@v1
     with:
       command: /cli-review
       fail_on_agent_error: true
