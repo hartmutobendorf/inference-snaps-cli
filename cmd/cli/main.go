@@ -32,12 +32,12 @@ func main() {
 	}
 
 	// rootCmd is the base command
-	// It gets populated with subcommands
+	// it gets populated with subcommands
 	rootCmd := &cobra.Command{
 		SilenceUsage: true,
 		Long: instanceName + " runs an engine that is optimized for your host machine,\n" +
 			"providing a local service endpoint.\n\n" +
-			"Use this command to configure the active engine, or switch to an alternative engine.",
+			"Use this command to configure the active engine or switch to an alternative engine.",
 		PersistentPreRunE: persistentPreRunE,
 		Use:               instanceName,
 	}
@@ -46,7 +46,7 @@ func main() {
 	if env.Snap() != "" {
 		services, err := snapctl.Services().Run()
 		if err != nil {
-			fmt.Printf("Error: retrieving snap services: %v\n", err)
+			fmt.Printf("Error retrieving snap services: %v\n", err)
 			return
 		}
 		if len(services) > 0 {
