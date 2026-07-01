@@ -1,1 +1,1 @@
-paths: [cmd/cli/**]
+paths: [cmd/**]
