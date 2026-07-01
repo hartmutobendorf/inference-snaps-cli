@@ -80,10 +80,7 @@ func ExampleUseEngine_noRestartWhenEngineUnchanged() {
 
 	cache := storage.NewMockCache()
 	cache.SetActiveEngine("intel-gpu")
-<<<<<<< HEAD
-=======
 	cache.SetActiveModel("4b-it-int4-fq-ov")
->>>>>>> main
 	config := storage.NewMockConfig()
 	cmd := useEngineCommand{
 		assumeYes: true,
@@ -192,10 +189,6 @@ func ExampleUseEngine_autoSelectEngine() {
 	// ✔ cpu: compatible, score=10
 	// Selected engine: cpu
 	// Engine changed to "cpu".
-<<<<<<< HEAD
-	// [mock] Restarting all services
-}
-=======
 	// Model changed to "26b-q4-k-m-gguf".
 	// [mock] Restarting all services
 }
