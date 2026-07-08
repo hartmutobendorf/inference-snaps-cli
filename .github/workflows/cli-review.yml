@@ -17,7 +17,7 @@ jobs:
     uses: canonical/cli-skill/.github/workflows/cli-skill-review-reusable.yml@v1
     with:
       command: /cli-review
-      provider: gemini
+      provider: google
       model: gemini-3.5-flash
       fail_on_agent_error: true
       enforce_cli_metadata: false
