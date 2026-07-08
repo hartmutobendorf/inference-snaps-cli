@@ -17,8 +17,8 @@ func WebUi(ctx *common.Context) *cobra.Command {
 	cmd.Context = ctx
 
 	cobraCmd := &cobra.Command{
-		Use:               "webui",
-		Short:             "Launch web UI",
+		Use:               "serve",
+		Short:             "Serve web UI",
 		Long:              "Open the snap's builtin web user interface in the default browser",
 		Args:              cobra.NoArgs,
 		ValidArgsFunction: cobra.NoFileCompletions,
