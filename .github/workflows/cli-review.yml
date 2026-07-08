@@ -17,6 +17,7 @@ jobs:
     uses: canonical/cli-skill/.github/workflows/cli-skill-review-reusable.yml@main
     with:
       command: /cli-review
+      model: deepseek/deepseek-v4-pro
       fail_on_agent_error: true
       enforce_cli_metadata: false
     secrets:
