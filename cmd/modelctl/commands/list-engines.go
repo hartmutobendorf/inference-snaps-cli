@@ -33,7 +33,7 @@ func ListEngines(ctx *common.Context) *cobra.Command {
 	cmd.Context = ctx
 
 	cobraCmd := &cobra.Command{
-		Use:               "list-engines",
+		Use:               "engines",
 		Short:             "List available engines",
 		Args:              cobra.NoArgs,
 		ValidArgsFunction: cobra.NoFileCompletions,
