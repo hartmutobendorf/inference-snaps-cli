@@ -14,12 +14,13 @@ permissions:
 
 jobs:
   cli-review:
-    uses: canonical/cli-skill/.github/workflows/cli-skill-review-reusable.yml@main
+    uses: canonical/cli-skill/.github/workflows/cli-skill-review-reusable.yml@v1
     with:
       command: /cli-review
-      model: deepseek/deepseek-v4-pro
+      provider: gemini
+      model: gemini-3.5-flash
       fail_on_agent_error: true
       enforce_cli_metadata: false
     secrets:
-      llm_token: ${{ secrets.OPENROUTER_API_KEY }}
+      llm_token: ${{ secrets.GEMINI_API_KEY}}
       gh_token: ${{ secrets.GITHUB_TOKEN }}
